@@ -124,7 +124,7 @@ header nav ul li a {
 .button-1 {
     display: block;
     text-align: center;
-    background: #444;
+    background: palevioletred;
     border-radius: 3px;
     color: #fff;
     width: 270px;
@@ -141,6 +141,7 @@ header nav ul li a {
 
 #sections ul {
     margin: 100px 0;
+    background-color: plum;
 }
 
 #sections ul li {
@@ -161,6 +162,7 @@ header nav ul li a {
 
 #sections ul li.section-1 {
     background: url('/project/images/ldsTemple.png') no-repeat top center;
+    background-color: plum;
 }
 
 #sections ul li.section-2 {
@@ -172,7 +174,7 @@ header nav ul li a {
 }
 
 #primary-content {
-    background-color: #f8fafa;
+    background-color: burlywood;
     padding: 60px 0;
     text-align: center;
 }
@@ -181,7 +183,7 @@ header nav ul li a {
     display: block;
     margin: 0 auto 20px auto;
     width: 400px;
-    border-bottom: 1px solid #02b8dd;
+    border-bottom: 1px solid pink;
     padding: 0 0 20px 0;
 }
 
@@ -213,15 +215,16 @@ header nav ul li a {
 }
 
 article h4 {
-    border-bottom: 1px solid #02b8dd;
+    border-bottom: 1px solid pink;
     padding-bottom: 20px;
 }
 
 .more-link {
-    border: 1px solid #02b8dd;
-    color: #02b8dd;
+    border: 1px solid #fff;
+    color: #fff;
     padding: 6px 20px;
     border-radius: 3px;
+    background-color: palevioletred;
 }
 
 .more-link:hover {
@@ -232,26 +235,28 @@ article h4 {
 #cta {
     padding: 60px 0;
     text-align: center;
+    background-color: white;
 }
 
 #cta h3 {
     display: block;
     margin: 0 auto 20px auto;
     width: 400px;
-    border-bottom: 1px solid #02b8dd;
+    border-bottom: 1px solid pink;
     padding: 0 0 20px 0;
 }
 
 .button-2 {
     display: block;
     margin: 0 auto;
-    border: 2px solid #02b8dd;
-    color: #02b8dd;
+    border: 2px solid white;
+    color: #fff;
     border-radius: 3px;
     width: 180px;
     height: 50px;
     font-size: 20px;
     line-height: 50px;
+    background-color: palevioletred;
 }
 
 .button-2:hover {
@@ -261,7 +266,7 @@ article h4 {
 
 footer {
     padding: 60px 0;
-    background-color: #f8fafa;
+    background-color: #f8faf8;
 }
 
 #footer-info {
@@ -316,6 +321,6 @@ footer {
 }
 
 .fa-instagram {
-    background: #125688;
+    background: #E1306C;
     color: white;
 }
