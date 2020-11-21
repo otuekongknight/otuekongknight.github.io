@@ -1,9 +1,3 @@
-@media screen and (max-width: 550px) {
-    .______ {
-        display: block;
-    }
-}
-
 body {
     background-color: #fff;
     color: #777;
@@ -43,11 +37,11 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
     color: black;
+    font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 h5 {
@@ -57,27 +51,36 @@ h5 {
     text-transform: uppercase;
 }
 
-.main {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 50px;
-    font-size: 1em;
-    font-style: italic;
+@media only screen and (min-width: 650px) {
+    .bodyOne {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bodyOne {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-right: 40px;
+        font-size: 1em;
+        font-style: italic;
+    }
 }
 
-.mainTwo {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-right: 40px;
-    font-size: 1em;
-    font-style: italic;
+@media only screen and (min-width: 640px) {
+    .bodyTwo {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bodyTwo {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-right: 40px;
+        font-size: 1em;
+        font-style: italic;
+    }
 }
 
 a {
@@ -110,7 +113,9 @@ small {
 }
 
 header {
-    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header h1 {
@@ -144,6 +149,7 @@ header nav ul li a {
     height: 400px;
     padding-top: 10px;
     background: #e8eced url('/project/images/ldsTemple.png');
+    clear: both;
 }
 
 #hero-image h2 {
@@ -154,7 +160,7 @@ header nav ul li a {
 .button-1 {
     display: block;
     text-align: center;
-    background: palevioletred;
+    background: black;
     border-radius: 3px;
     color: #fff;
     width: 270px;
@@ -286,7 +292,7 @@ article h4 {
     height: 50px;
     font-size: 20px;
     line-height: 50px;
-    background-color: palevioletred;
+    background-color: black
 }
 
 .button-2:hover {
@@ -295,8 +301,10 @@ article h4 {
 }
 
 footer {
+    color: brown;
     padding: 60px 0;
-    background-color: #f8faf8;
+    background-color: white;
+    font-weight: bold;
 }
 
 #footer-info {

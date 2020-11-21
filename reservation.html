@@ -4,28 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description" content="Hotels and Suites">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Otuekong Okon">
     <title>Temple Inn and Suites | Your Relaxation is Our Priority</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/amenitiesCss.css">
+    <script>
+        function finalCost() {
+            var roomType = document.getElementById("room_type").value;
+            var roomNum = document.getElementById("room_number").value;
+            var personNum = document.getElementById("person_number").value;
+            var childNum = document.getElementById("child_number").value;
+            var resFacilities = document.getElementById("res_facilities").value;
+
+            var total = (parseInt(roomType) * 10) + ((roomNum) * 2) + ((personNum) * 3) + ((childNum) * 2) + ((resFacilities) * 5)
+
+            document.getElementById("result").innerHTML = total;
+        }
+    </script>
 </head>
 
 <body>
-    <img src="/project/images/houselogo.png" alt="" style="float: left; height: 50px;" />
     <header>
-        <div class="wrapper">
-            <h1>Temple Inn & Suites<span class="color"></span></h1>
-            <nav>
-                <ul>
-                    <li><a href="/project/index.html">Home</a></li>
-                    <li><a href="/amenities.html">Amenities</a></li>
-                    <li><a href="/spotlight.html">Temple Spolight</a></li>
-                    <li><a href="/reservation.html">Reservations</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="/project/images/houselogo.png" alt="" style="float: left; height: 50px;" />
+        <h1>Temple Inn & Suites<span class="color"></span></h1>
+        <nav>
+            <ul>
+                <li><a href="/project/index.html">Home</a></li>
+                <li><a href="/amenities.html">Amenities</a></li>
+                <li><a href="/spotlight.html">Temple Spolight</a></li>
+                <li><a href="/reservation.html">Reservations</a></li>
+            </ul>
+        </nav>
     </header>
-
-
     <div id="hero-image">
         <div class="wrapper">
             <h2>.<strong></strong><br/></h2>
@@ -33,16 +45,78 @@
         </div>
     </div>
     <main>
-        <p><img src="/project/images/reservation.jpg" alt="reservation"></p>
+        <div class="hotel_reserve_box">
+            <h3> Hotel Reservation Form </h3><br>
+            <form>
+                <div class="form-group">
+                    <label>Room/Suite Type</label>
+                    <select class="form-control" id="room_type" onchange="finalCost()">
+                    <option value="0" selected>Select Room/Suite </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Number of room/suite</label>
+                    <select class="form-control" id="room_number" onchange="finalCost()">
+                    <option value="0"> 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label>Number of persons</label>
+                    <select class="form-control" id="person_number" onchange="finalCost()">
+                    <option value="0"> 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label>Number of children</label>
+                    <select class="form-control" id="child_number" onchange="finalCost()">
+                    <option value="0"> 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label>Restaurant facilities?</label>
+                    <select class="form-control" id="res_facilities" onchange="finalCost()">
+                    <option value="0" selected> Do you want restaurant facilities? </option>
+                    <option value="2"> Yes </option>
+                    <option value="0"> No </option>
+                </select>
+                </div><br>
+                <div class="form-group">
+                    <label>Total Cost ($) : </label>
+                    <span id="result" style="background-color: #7527b0;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span>
+                </div>
+            </form>
+        </div>
     </main>
+
     <footer>
         <a href="about.html" target="_self">Live Chat</a> | <a href="services.html" target="_self">Email</a> | <a href="contact.html" target="_self">Call Us</a><br>
         <a href="about.html" target="_self">355 Wisconsin Avenue</a><br>
         <a href="about.html" target="_self">Bethesda, MD 20814</a> <br> <br>
         <br /> &copy; 2020 TempleInn.com. All Rights Reserved.| Otuekong Okon
-        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="fa fa-instagram"></a>
         <div class="wrapper">
         </div>
         <div class="clear"></div>

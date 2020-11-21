@@ -1,9 +1,3 @@
-@media screen and (max-width: 550px) {
-    .______ {
-        display: block;
-    }
-}
-
 body {
     background-color: #fff;
     color: #777;
@@ -16,6 +10,8 @@ h1 {
     color: #444;
     font-size: 45px;
     margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 h3 {
@@ -65,24 +61,18 @@ h5 {
     font-style: italic;
 }
 
-*,
-*::after,
-*::before {
+.container {
+    width: 100%;
+    margin: 2rem auto;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
-.container {
-    width: 60%;
-    margin: 2rem auto;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
 }
 
 .gallery__img {
@@ -182,7 +172,9 @@ small {
 }
 
 header {
-    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header h1 {
@@ -226,7 +218,7 @@ header nav ul li a {
 .button-1 {
     display: block;
     text-align: center;
-    background: palevioletred;
+    background: black;
     border-radius: 3px;
     color: #fff;
     width: 270px;
@@ -348,19 +340,6 @@ article h4 {
     padding: 0 0 20px 0;
 }
 
-.button-2 {
-    display: block;
-    margin: 0 auto;
-    border: 2px solid white;
-    color: #fff;
-    border-radius: 3px;
-    width: 180px;
-    height: 50px;
-    font-size: 20px;
-    line-height: 50px;
-    background-color: palevioletred;
-}
-
 .button-2:hover {
     background-color: #02b8dd;
     color: #fff;
@@ -369,6 +348,8 @@ article h4 {
 footer {
     padding: 60px 0;
     background-color: #f8faf8;
+    color: brown;
+    font-weight: bold;
 }
 
 #footer-info {
