@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Online Portfolio</title>
+    <style>
+        .card {
+            width: 400px;
+            border-radius: 3px;
+            background-color: white;
+            transition: box-shadow 0.3s ease-in-out;
+            box-shadow: 1px 1px 4px 1px #888;
+        }
+        
+        .card:hover {
+            box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        .card__media {
+            position: relative;
+        }
+        
+        .card__media::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .card__media img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .card__date {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #e74c3c;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .date--day {
+            font-size: 20px;
+            line-height: 1;
+        }
+        
+        .date--month {
+            font-size: 14px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+        
+        .card__category {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: green;
+            font-size: 50px;
+        }
+        
+        .card__content {
+            padding: 40px 25px;
+            color: #999999;
+            transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+        }
+        /* Changes padding on wide card */
+        
+        .card__title {
+            color: initial;
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+        
+        .card__meta {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .viewButton {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            float: left;
+            margin-top: 5px;
+        }
+        
+        .editButton {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<article class="card">
+    <div class="card__media">
+        <img src="https://picsum.photos/400/240" alt="Card image" />
+        <div class="card__date">
+            <span class="date--day">4</span>
+            <span class="date--month">Dec</span>
+        </div>
+        <span class="card__category">Photos</span>
+    </div>
+
+    <div class="card__content">
+        <header class="card__header">
+            <h2 class="card__title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore architecto ad porro aliquid optio ratione alias asperiores labore cumque provident error nihil, at quas!
+            </h2>
+        </header>
+        <footer>
+            <button class="viewButton">view</button>
+            <button class="editButton">Edit</button>
+            <span class="card__post-date" style='float: right;  margin-top: 5px;'>6 min ago</span>
+
+        </footer>
+    </div>
+</article>

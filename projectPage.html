@@ -1,93 +1,134 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <meta name="description" content="Hotels and Suites">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Otuekong Okon">
-    <title>Otuekong's Online Portfolio | Welcome to my online space</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/site-plan.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Online Portfolio</title>
+    <link href="/finalSitePractice.css" rel="stylesheet">
+    <link href="/customCSS.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span class="glyphicon glyphicon-fire"></span> LOGO
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="finalSItePractice.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/backgroundInfo.html">Background</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/projectPage.html" class="dropdown-toggle">Projects</a>
+                    </li>
+                    <li>
+                        <a href="contactMe.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
     <header>
-        <img src="/project/images/houselogo.png" alt="" style="float: left; height: 50px;" />
-        <h1>Temple Inn & Suites<span class="color"></span></h1>
-        <nav>
-            <ul>
-                <li><a href="/final-site-plan.html">Home</a></li>
-                <li><a href="/backgroundInfo.html">Background Information</a></li>
-                <li><a href="/projectPage.html">Projects</a></li>
-                <li><a href="/contactMe.html">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Otuekong's Portfolio</h1>
+                <p>As you explore this site, you will learn more about me and why you should hire me.</p>
+                <a href="#" class="btn btn-primary btn-lg">Engage Now</a>
+            </div>
+        </div>
     </header>
 
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
+                    <h2 class="section-heading">Completely synergize resource taxing relationships</h2>
+                    <p class="text-light">Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="hero-image">
-        <div class="wrapper">
-            <h2>.<strong></strong><br/></h2>
-            <a href="#" class="button-1">Get Started</a>
+    <!-- Content 1 -->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-responsive img-circle center-block" src="/project/images/familyhistory.jpg" alt="PlaceHolde Image">
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="section-header">Hands on guy</h2>
+                    <p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                    <a href="#" class="btn btn-primary btn-lg">See Why</a>
+                </div>
+
+            </div>
         </div>
-    </div>
-    <main>
-        <div class="bodyOne">
-            <section>
-                <h3> Place Holder</h3>
-                <p> We undertand the temple means a lot to you. <br> We know how much you desire for your home to feel like the temple.<br> So, we created a place that fits your needs--we created a<b> Home Away From Home!</b> So what are you waiting for?
-                    Come and see how we can make you have the best experience. </p>
-            </section>
-            <picture>
-                <img src="" alt="" style=" height: 250px; box-shadow: 0 0 30px #000;" />
-            </picture>
+    </section>
+    <section class="content content-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="section-header">Team Player</h2>
+                    <p class="lead text-light">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                    <a href="#" class="btn btn-default btn-lg">Ask How</a>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive img-circle center-block" src="/project/images/spotlightone.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="content content-3">
+        <div class="container">
+            <h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Want to See More?</h2>
+            <p class="lead text-muted">You are probably liking what you've seen so far. Do you wanna see more of my work? Why not click on the button below!.</p>
+            <a href="#" class="btn btn-primary btn-lg">Click Here</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+
+        <!-- Contact Us -->
+        <div class="contact">
+            <div class="container">
+                <h2 class="section-heading">Contact Me</h2>
+                <p><span class="glyphicon glyphicon-earphone"></span><br> +1(970) 852-2517</p>
+                <p><span class="glyphicon glyphicon-envelope"></span><br> otuekongknight@gmail.com</p>
+            </div>
         </div>
 
-        <div class="bodyTwo">
-            <picture>
-                <img src="" alt="" style="height: 250px; box-shadow: 0 0 30px #000;" />
-            </picture>
-            <section>
-                <h4>Place Holder</h4>
-                <p> Are you or your ward getting married?. <br> Are you looking for a place to celebrate your love? Look no futher! Temple Inns is here for you whenever you need us. So what are you waiting for? Come and see how we can make you and your guest
-                    have the best experience. </p>
-                <a href="#"><img src="/project/images/projects.jpg" style="height: 500px;" /></a>
-            </section>
-            </section>
+        <!-- Copyright etc -->
+        <div class="small-print">
+            <div class="container">
+                <p>Copyright &copy; Otuekong Okon 2020</p>
+            </div>
         </div>
-    </main>
-    <div id="primary-content">
-        <div class="wrapper">
-            <article>
-                <h5>Place Holder</h5>
-                <p>While you are here with us, you can research your ancestors by taking advantage of our World class family history center. And what's more? It's free for all our residents.
-                </p>
-                <a href="#"><img src="" alt="" /></a>
-            </article>
-        </div>
-    </div>
 
-    <div id="action">
-        <div class="wrapper">
-            <h3>Click Here?</h3>
-            <p>You are probably here on our website because you have heard good things about us. We would like to tell you more about what we do and the services we offer. So schedule a tour?
-            </p>
-            <a href="#" class="button-2">Get Started</a>
-        </div>
-    </div>
-    <footer>
-        <a href="about.html" target="_self">Live Chat</a> | <a href="services.html" target="_self">Email</a> | <a href="contact.html" target="_self">Call Us</a><br>
-        <a href="about.html" target="_self">355 Wisconsin Avenue</a><br>
-        <a href="about.html" target="_self">Bethesda, MD 20814</a> <br> <br>
-        <br /> &copy; 2020 TempleInn.com. All Rights Reserved.| Otuekong Okon
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="fa fa-facebook"></a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="fa fa-instagram"></a>
-        <div class="wrapper">
-        </div>
-        <div class="clear"></div>
     </footer>
 </body>
 
