@@ -26,9 +26,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <span class="glyphicon glyphicon-fire"></span>
-                </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -54,28 +51,23 @@
             <div class="header-content-inner">
                 <h1>Otuekong's Portfolio</h1>
                 <p>As you explore this site, you will learn more about me and why you should hire me.</p>
-                <a href="/projectPage.html" class="btn btn-primary btn-lg">Learn More</a>
+                <a href="/projectPage.html" class="btn btn-primary btn-lg">Find Out Here</a>
             </div>
         </div>
     </header>
     <div class="contain">
         <form id="contact" action="#" method="post">
-            <h3>Send a Message Here!</h3>
-            <fieldset>
-                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Your Email Address" type="email" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-            </fieldset>
-            <fieldset>
-                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </fieldset>
+            <h2>Send a Message Here!</h2>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+            <label for="Pname">Phone Number (Optional):</label><br>
+            <input type="text" id="Pname" name="Pname">
+            <label for="messageMe">Message:</label>
+
+            <textarea id="messageMe" name="messageMe" rows="4" cols="50"></textarea>
+            <button type="submit" id="contact-submit">Submit</button>
         </form>
     </div>
 
@@ -97,7 +89,8 @@
                 <p><span class="glyphicon glyphicon-earphone"></span> +1(970) 852-2517</p>
                 <p><span class="glyphicon glyphicon-envelope"></span>otuekongknight@gmail.com</p>
             </div>
-
+        </div>
+        <!--
             <section class="card">
                 <div class="card__media">
                     <img src="/project/images/newbackgrp.jpg" alt="Card image" />
@@ -117,6 +110,7 @@
                 </div>
             </section>
         </div>
+        -->
 
         <!-- Copyright etc -->
         <div class="small-print">
