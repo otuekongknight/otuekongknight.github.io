@@ -4,17 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>WDD 130</title>
+    <title>WDD 230</title>
+    <link href="/main.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>WDD 130 Assignment Portal</h1>
+        <h1>Otuekong Shedrack O.</h1>
+        <img class="picture" src="/project/images/passportPhotoOne.jpg" alt="Otuekong Photo">
     </header>
     <main>
-        <h2>Assignment Links Below</h2>
+        <h2>CIT 230: Assignment Portal</h2>
+        <hr>
         <ul>
-            <li>Week 1: <a href="#">No Web Submission</a></li>
+            <li>Lesson 02: <a href="index.html">PlaceholderOne</a></li>
+            <li>Lesson 03: <a href="index.html">PlaceholderTwo</a></li>
+            <li>Lesson 04: <a href="index.html">PlaceholderThree</a></li>
+        </ul>
+        <!--<li>Week 1: <a href="#">No Web Submission</a></li>
             <li>Week 2: <a href="site-plan.html">The Temple Inn Site Plan</a></li>
             <li>Week 3: <a href="fixedhtml.html">Fixed Html Activity</a></li>
             <li>Week 3: <a href="project/">Temple Inn & Suites Home Page</a></li>
@@ -30,10 +37,55 @@
             <li>Week 12: <a href="/card.html"> Card Complement</a></li>
             <li>Week 13: <a href="/final-site-plan.html"> Final site work in progress</a></li>
             <li>Week 14: <a href="/final-site-plan.html"> Final Project</a></li>
-        </ul>
+            -->
     </main>
     <footer>
-        &copy;2020 | Otuekong Okon | Uyo Nigeria | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a>
+        &copy;2021 | Otuekong Okon | Uyo Nigeria | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a>|<br> <span id="currentdate"></span><br />
+
+        <span id="lastUpdated"></span>
+        <script>
+            let daynames = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+            let months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+            ];
+            let d = new Date();
+            let dayName = daynames[d.getDay()];
+            let monthName = months[d.getMonth()];
+            let fulldate =
+                dayName +
+                ", " +
+                monthName +
+                " " +
+                d.getDate() +
+                ", " +
+                d.getFullYear();
+
+            document.getElementById("currentdate").textContent = fulldate;
+
+            document.getElementById("currentyear").textContent = d.getFullYear();
+
+            let oLastModif = new Date(document.lastModified);
+            document.getElementById("lastModified").textContent = oLastModif;
+        </script>
     </footer>
 </body>
 
