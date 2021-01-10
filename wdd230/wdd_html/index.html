@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>WDD 230</title>
-    <link href="/main.css" rel="stylesheet">
+    <link href="/wdd230/css/main.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Otuekong Shedrack O.</h1>
-        <img class="picture" src="/project/images/passportPhotoOne.jpg" alt="Otuekong Photo">
+        <img class="picture" src="/wdd230/images/passportPhotoOne.jpg" alt="Otuekong Photo">
     </header>
     <main>
         <h2>CIT 230: Assignment Portal</h2>
@@ -42,51 +42,11 @@
     <footer>
         &copy;2021 | Otuekong Okon | Uyo Nigeria | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a>|<br> <span id="currentdate"></span><br />
 
-        <span id="lastUpdated"></span>
-        <script>
-            let daynames = [
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-            ];
-            let months = [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December",
-            ];
-            let d = new Date();
-            let dayName = daynames[d.getDay()];
-            let monthName = months[d.getMonth()];
-            let fulldate =
-                dayName +
-                ", " +
-                monthName +
-                " " +
-                d.getDate() +
-                ", " +
-                d.getFullYear();
+        <span id="lastmodified"></span>
+        <p class="dateTime">Last Updated: <span id='lastupdated'></span></p>
 
-            document.getElementById("currentdate").textContent = fulldate;
-
-            document.getElementById("currentyear").textContent = d.getFullYear();
-
-            let oLastModif = new Date(document.lastModified);
-            document.getElementById("lastModified").textContent = oLastModif;
-        </script>
     </footer>
+    <script src="/wdd230/js/firstJava.js"></script>
 </body>
 
 </html>
