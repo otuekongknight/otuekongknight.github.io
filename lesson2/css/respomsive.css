@@ -8,7 +8,7 @@ body {
 /* phone or baseline views **************************/
 
 main {
-    max-width: 767px;
+    max-width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
