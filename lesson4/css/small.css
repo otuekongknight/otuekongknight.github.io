@@ -1,0 +1,244 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+     :root {
+        --font-family: 'Poppins', sans-serif;
+    }
+    
+    * {
+        font-family: var(--font-family) !important;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: var(--gray-color);
+        margin: 0 auto;
+    }
+    /* text styles */
+    
+    ul,
+    li,
+    script {
+        color: var(--blue-color);
+        /*padding: 1em;*/
+    }
+    /* list styles */
+    
+    ul,
+    li {
+        margin: 10px;
+        padding-left: 0em;
+    }
+    
+    a:link,
+    a:active {
+        text-transform: capitalize;
+        color: var(--blue-color);
+    }
+    /* link clicked, link focused */
+    
+    a:visited {
+        color: var(--used-color);
+    }
+    
+    .main-head {
+        background: burlywood;
+        padding: 15px 0;
+    }
+    
+    .header-row {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0 25px;
+        display: grid;
+        grid-gap: 1rem;
+    }
+    
+    h1.town {
+        padding-top: 20px;
+    }
+    
+    @media (min-width: 600px) {
+        .header-row {
+            grid-template-columns: 1fr 4fr;
+        }
+    }
+    /* Screen larger than 900px? 3 columns */
+    
+    @media (min-width: 900px) {
+        .header-row {
+            grid-template-columns: 1fr 4fr;
+        }
+    }
+    
+    .header-item {
+        background: transparent;
+        /* padding: 1.5vw 2vw; */
+        /* margin: 0 auto; */
+    }
+    
+    .containerbox {
+        background-color: grey;
+        padding: 12px;
+        display: block;
+        margin: 10px auto;
+        border: 1px;
+        color: black;
+    }
+    
+    @media (min-width: 600px) {
+        .forecast {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (min-width: 900px) {
+        .forecast {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+    
+    @media (min-width: 600px) {
+        .forecast {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (min-width: 900px) {
+        .forecast {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+    
+    .forecast-item {
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        /* padding: 1.5vw 2vw; */
+        margin: 0 auto;
+    }
+    
+    .footer-row {
+        display: grid;
+        grid-gap: 1rem;
+    }
+    
+    @media (min-width: 600px) {
+        .footer-row {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+    }
+    
+    @media (min-width: 900px) {
+        .footer-row {
+            grid-template-columns: repeat(2, 1fr);
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    
+    .footer-item {
+        padding: 1.5vw 2vw;
+        margin: 10px;
+    }
+    /* profile photo float right */
+    
+    img {
+        max-width: 100%;
+    }
+    
+    h1 {
+        color: black;
+    }
+    
+    h2 {
+        color: var(--blue-color);
+        font-size: 1.25em;
+    }
+    
+    footer {
+        font-size: .9em;
+        padding: 3rem;
+        text-align: center;
+        color: black;
+        background: burlywood
+    }
+    
+    .subscript {
+        font-size: .7em;
+        padding: .5rem;
+        text-align: center;
+    }
+    
+    header>h1,
+    h4 {
+        padding: 0em;
+        ;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .header {
+        background-color: grey;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+    
+    .header li a {
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    nav {
+        margin: 0 auto;
+        background-color: burlywood;
+    }
+    
+    .navigation {
+        list-style: none;
+        padding: 0;
+        max-width: 1000px;
+        margin: 0 auto !important;
+    }
+    
+    .navigation li:first-child {
+        display: block;
+    }
+    
+    .navigation li {
+        display: none;
+    }
+    
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    
+    .navigation a:hover {
+        color: burlywood;
+        background-color: grey;
+    }
+    
+    .responsive li {
+        display: block;
+    }
