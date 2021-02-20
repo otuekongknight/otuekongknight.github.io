@@ -22,3 +22,12 @@
             filter: blur(0rem);
             transition: filter .5s;
         }
+        
+        img[data-src] {
+            filter: blur(0.2rem);
+        }
+        
+        img {
+            filter: blur(0rem);
+            transition: filter 0.5s;
+        }

@@ -7,17 +7,16 @@ function preloadImage(img) {
     }
 
     img.src = src;
+    img.removeAttribute('data-src');
 }
 
-//optional parameters being set for the IntersectionalObserver
 const imgOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px 50px 0px",
+    threshold: 1,
+    rootMargin: "0px 0px 10px 0px",
 };
 
-//loop through the images and determine which ones need to be shown
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-    entries.forEach((entry) => {
+    entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
         } else {
@@ -27,6 +26,6 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     });
 }, imgOptions);
 
-images.forEach((image) => {
+images.forEach(image => {
     imgObserver.observe(image);
 });
