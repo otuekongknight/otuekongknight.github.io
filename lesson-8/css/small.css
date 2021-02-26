@@ -244,6 +244,10 @@
                 text-align: center;
             }
             
+            h4 {
+                text-align: center;
+            }
+            
             header>h1,
             h4 {
                 padding: 0em;
@@ -381,7 +385,123 @@
                 background-color: grey;
                 color: burlywood;
             }
+            /* --------FORM STYLING----------- */
             
-            h4 {
+            h1.h1sc {
+                font-size: 2.2rem;
+            }
+            
+            form fieldset {
+                margin: 2rem 0;
+                border: 1px solid #2a3640;
+                padding: 2rem 2%;
+            }
+            
+            form legend {
+                color: #2a3640;
+                margin: 0 1rem;
+                padding: 0 .5rem;
+                font-size: 1.5rem;
+            }
+            
+            form label.top,
+            form div {
+                display: block;
+                padding-top: 1rem;
+                color: #2a3640;
+                font-size: 1rem;
+                font-family: "Montserrat", "Helvetica", sans-serif;
+            }
+            
+            form label.top input,
+            form label.top select {
+                -webkit-appearance: none;
+                display: block;
+                font-size: 1rem;
+                border: solid 1px burlywood;
+                border-radius: 4px;
+                padding: .75rem;
+                color: #555;
+                width: 100%;
+                max-width: 20rem;
+                background-color: burlywood;
+            }
+            
+            #rating {
+                display: block;
+                padding-top: 3rem;
+                color: burlywood;
+                font-size: 1rem;
+            }
+            
+            div#rate {
+                margin-top: -1.5rem;
+            }
+            
+            form label.sbs {
+                display: block;
+                padding: .75rem 0;
+                color: #555;
+            }
+            
+            form input.submitBtn {
+                border: none;
+                background-color: burlywood;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 5rem;
+                padding: .75rem 1.5rem;
+                margin: 0 0 2rem 2%;
+                width: 96%;
+                max-width: 20rem;
+            }
+            
+            form label.top input:required {
+                border-left: red solid 6px;
+            }
+            
+            form label.top input:required:valid {
+                border-left: green solid 6px;
+            }
+            
+            input.txtarea {
+                width: 100%;
+                height: 200px;
+                border: solid 1px burlywood;
+                border-radius: 10px;
+                padding: .75rem;
+                color: burlywood;
+            }
+            
+            fieldset#danger {
+                margin-bottom: 5rem;
+            }
+            
+            form select.stormbut {
+                padding: 5px;
+                color: red;
+            }
+            
+            div#rate {
+                padding-top: 3rem;
+                margin-bottom: -1rem;
+            }
+            
+            span#ratingvalue {
+                background-color: black;
+                color: white;
+                padding: .2rem;
+            }
+            
+            img.farmhouse {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                box-shadow: 0 4px 8px 0 rgba(0, 1, 1, 0.5);
+            }
+            
+            h1.h1sc {
                 text-align: center;
+                font-size: 3rem;
             }
