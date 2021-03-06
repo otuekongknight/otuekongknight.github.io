@@ -36,7 +36,7 @@
         <nav class="header">
             <ul class="navigation">
                 <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
-                <li><a href="/lesson-9/index.html" class="active">Home</a></li>
+                <li class="active"><a href="/lesson-9/index.html">Home</a></li>
                 <li><a href="/lesson4/preston-4.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -104,31 +104,10 @@
                 </table>
             </div>
         </div>
-
-        <section>
-            <h2>Alternating articles w/ images</h2>
-            <article>
-                <img src="https://placekitten.com/200/200" alt="image 1">
-                <div class="data">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem ac felis egestas dapibus. Donec efficitur lacus eget varius molestie. Sed bibendum elit elit, ut consequat nibh egestas vel. Sed non purus sed dolor lobortis feugiat. Sed porttitor
-                    augue felis. Morbi condimentum metus a tortor eleifend bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus sed nisi laoreet varius et ut turpis.
-                </div>
-            </article>
-            <article>
-                <img src="https://placekitten.com/200/200" alt="image 2">
-                <div class="data">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem ac felis egestas dapibus. Donec efficitur lacus eget varius molestie. Sed bibendum elit elit, ut consequat nibh egestas vel. Sed non purus sed dolor lobortis feugiat. Sed porttitor
-                    augue felis. Morbi condimentum metus a tortor eleifend bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus sed nisi laoreet varius et ut turpis.
-                </div>
-            </article>
-            <article>
-                <img src="https://placekitten.com/200/200" alt="image 3">
-                <div class="data">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem ac felis egestas dapibus. Donec efficitur lacus eget varius molestie. Sed bibendum elit elit, ut consequat nibh egestas vel. Sed non purus sed dolor lobortis feugiat. Sed porttitor
-                    augue felis. Morbi condimentum metus a tortor eleifend bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus sed nisi laoreet varius et ut turpis.
-                </div>
-            </article>
-        </section>
+        <div class="containerbox">
+            <div class="cards">
+            </div>
+        </div>
 
         <div class="containerbox">
             <div class="footer-row">
@@ -165,6 +144,8 @@
     <script src="/lesson-6/js/weather.js"></script>
     <script src="/lesson-6/js/announcement.js"></script>
     <script src="/lesson-6/js/windchill.js"></script>
+    <script src="/lesson-9/js/index.js"></script>
+    <script src="js/cards.js"></script>
     <script>
         document.getElementById('windchill').innerHTML = windChill(50, 10) + " ºF";
     </script>
