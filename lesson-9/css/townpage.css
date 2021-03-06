@@ -1,0 +1,552 @@
+str-style,
+section#one .title text,
+section#one .title path {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 1000;
+    animation: dash 4s linear forwards;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+body {
+    margin: 0;
+    padding: 0 4px;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 1.5;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+    background-color: burlywood;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: burlywood;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #df2359;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+a:hover,
+a.leadlink {
+    color: burlywood;
+}
+
+h1,
+h2,
+header a {
+    text-transform: uppercase;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+.smooth {
+    margin: 0 auto;
+    padding: 0 4px;
+    padding-left: 8px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+header,
+footer {
+    position: relative;
+    padding: 2em 3em;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 10vh;
+    background-color: burlywood;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+header h3 {
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: burlywood;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    margin: 0 1em;
+    transition: all 0.2s linear;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+header ul li::before {
+    position: absolute;
+    content: '';
+    top: calc(100% + 4px);
+    left: 0;
+    width: 20px;
+    height: 2px;
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+    background-color: #fff;
+    transform-origin: 0 100%;
+    transform: rotate(-5deg);
+    transition: all 0.2s ease-out;
+}
+
+header ul li:hover::before {
+    width: 100%;
+    background-color: #df2359;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 2em;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+.grid.g_two {
+    grid-template-columns: 1fr minmax(300px, auto);
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.flex.column {
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+.jcsb {
+    justify-content: space-between;
+}
+
+progress {
+    position: relative;
+    margin: 1em 0;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+    max-width: 360px;
+    height: 1px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #666;
+    border-radius: 1em;
+}
+
+progress::-webkit-progress-value {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-color: burlywood;
+    border-radius: 1em;
+    height: 5px;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+section {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    padding: 2em 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+    border-radius: 1em;
+    background-color: burlywood;
+}
+
+section:nth-child(odd) {
+    background-color: burlywood;
+}
+
+section#one {
+    background-image: url("https://andrejsharapov.github.io/iogo/src/header.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+section#one h1 {
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0;
+}
+
+section#one .title {
+    min-width: 350px;
+    max-height: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+section#one .title text {
+    letter-spacing: 2px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+section#one .title path {
+    stroke: #fff;
+    stroke-width: 4;
+    animation-delay: 1s;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+section#one::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, rgba(29, 30, 34, 0.3), burlywood);
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+section#two .blocks,
+section#four .blocks {
+    padding: 2em 0;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#two .blocks .block,
+section#four .blocks .block {
+    margin: 0 auto;
+    display: flex;
+    width: 23%;
+    height: 150px;
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #312d3c;
+    border-radius: 1em;
+    background-color: burlywood;
+    transition: all 0.2s linear;
+}
+
+section#two .blocks .block:hover,
+section#four .blocks .block:hover {
+    transform: translateY(-10px);
+    background-color: burlywood;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+section#four .blocks .block {
+    padding: 0.25em 1em;
+    width: 49%;
+    height: auto;
+    flex-flow: column wrap;
+    background-color: burlywood;
+}
+
+section#four .dots {
+    margin-top: 2em;
+    display: flex;
+    width: 25%;
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+section#four .dot {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid #312d3c;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+
+section#four .dot:hover {
+    transform: scale(1.1);
+    background-color: #312d3c;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section h2 span {
+    color: #df2359;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content p.lead {
+    font-size: 1.25rem;
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+.content .blur {
+    position: relative;
+    margin: auto;
+    padding: 1em;
+    width: 100%;
+    height: 350px;
+    border-radius: 0.35em;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 1em;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    border-radius: 0.35em;
+    background-color: grey;
+}
+
+@media (max-width: 900px) {
+    .section {
+        float: left;
+    }
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+    .content {
+        text-align: center;
+    }
+    .content h1::before {
+        display: none;
+    }
+}
+
+@-moz-keyframes hearts {
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+
+/*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+
+@-webkit-keyframes hearts {
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+@-o-keyframes hearts {
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes hearts {
+    50% {
+        transform: scale(1.4);
+    }
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+}
+
+@-moz-keyframes dash {
+    90% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+}
+
+@-webkit-keyframes dash {
+    90% {
+        stroke-dashoffset: 0;
+    }
+    /*stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;*/
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+}
+
+@-o-keyframes dash {
+    90% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+}
+
+@keyframes dash {
+    90% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+}
