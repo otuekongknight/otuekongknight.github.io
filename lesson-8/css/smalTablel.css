@@ -78,7 +78,7 @@
             .page-subset {
                 position: relative;
                 bottom: 100px;
-                color: white;
+                color: burlywood;
                 font-size: 100%;
             }
             
@@ -244,6 +244,10 @@
                 text-align: center;
             }
             
+            h4 {
+                text-align: center;
+            }
+            
             header>h1,
             h4 {
                 padding: 0em;
@@ -381,194 +385,125 @@
                 background-color: grey;
                 color: burlywood;
             }
+            /* --------FORM STYLING----------- */
             
-            h4 {
+            h1.h1sc {
+                font-size: 2.2rem;
+            }
+            
+            form fieldset {
+                margin: 2rem 0;
+                border: 1px solid #2a3640;
+                padding: 2rem 2%;
+            }
+            
+            form legend {
+                color: #2a3640;
+                margin: 0 1rem;
+                padding: 0 .5rem;
+                font-size: 1.5rem;
+            }
+            
+            form label.top,
+            form div {
+                display: block;
+                padding-top: 1rem;
+                color: #2a3640;
+                font-size: 1rem;
+                font-family: "Montserrat", "Helvetica", sans-serif;
+            }
+            
+            form label.top input,
+            form label.top select {
+                -webkit-appearance: none;
+                display: block;
+                font-size: 1rem;
+                border: solid 1px burlywood;
+                border-radius: 4px;
+                padding: .75rem;
+                color: #555;
+                width: 100%;
+                max-width: 20rem;
+                background-color: burlywood;
+            }
+            
+            #rating {
+                display: block;
+                padding-top: 3rem;
+                color: burlywood;
+                font-size: 1rem;
+            }
+            
+            div#rate {
+                margin-top: -1.5rem;
+            }
+            
+            form label.sbs {
+                display: block;
+                padding: .75rem 0;
+                color: #555;
+            }
+            
+            form input.submitBtn {
+                border: none;
+                background-color: burlywood;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 5rem;
+                padding: .75rem 1.5rem;
+                margin: 0 0 2rem 2%;
+                width: 96%;
+                max-width: 20rem;
+            }
+            
+            form label.top input:required {
+                border-left: red solid 6px;
+            }
+            
+            form label.top input:required:valid {
+                border-left: green solid 6px;
+            }
+            
+            input.txtarea {
+                width: 100%;
+                height: 200px;
+                border: solid 1px burlywood;
+                border-radius: 10px;
+                padding: .75rem;
+                color: burlywood;
+            }
+            
+            fieldset#danger {
+                margin-bottom: 5rem;
+            }
+            
+            form select.stormbut {
+                padding: 5px;
+                color: red;
+            }
+            
+            div#rate {
+                padding-top: 3rem;
+                margin-bottom: -1rem;
+            }
+            
+            span#ratingvalue {
+                background-color: black;
+                color: white;
+                padding: .2rem;
+            }
+            
+            img.farmhouse {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                box-shadow: 0 4px 8px 0 rgba(0, 1, 1, 0.5);
+            }
+            
+            h1.h1sc {
                 text-align: center;
-            }
-            /*********************************************************************************/
-            
-            .clearfix:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            
-            article {
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-            
-            article:nth-child(odd) img {
-                grid-column: 1;
-            }
-            
-            article:nth-child(odd) .data {
-                grid-column: 1;
-                grid-row: 1;
-            }
-            
-            .cards {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 10px;
-                align-content: center;
-                text-align: center;
-                margin: .5rem;
-                background-color: white;
-            }
-            
-            .cards article {
-                padding: 10px;
-                border: 2px solid burlywood;
-                background-color: white;
-            }
-            
-            .tInfo {
-                padding: 8px;
-            }
-            
-            .tName {
-                font-size: 1.7rem;
-                margin-bottom: 8px;
-            }
-            
-            .tMoto {
-                margin: 0 auto 20px auto;
-            }
-            
-            .cards img {
-                max-width: 100%;
-                height: auto;
-                box-shadow: 5px 8px 10px 1px #888888;
-                padding: 0;
-                margin-bottom: 10px;
-            }
-            
-            .homepage-info {
-                text-align: center;
-                max-width: 650px;
-                margin: auto;
-            }
-            
-            .frame {
-                text-align: center;
-                margin: auto;
-            }
-            
-            .clear {
-                clear: right;
-            }
-            
-            @media only screen and (min-width: 34.5em) {
-                .navigation {
-                    display: flex;
-                }
-                .navigation li {
-                    display: block;
-                    /* change state in small view */
-                    flex: 1 1 auto;
-                }
-                .nav li {
-                    max-width: 100%;
-                }
-                .navigation a {
-                    text-align: center;
-                }
-                .navigation li:first-child {
-                    display: none;
-                }
-                .show {
-                    max-width: 95%;
-                }
-                .mediumimage {
-                    display: block;
-                }
-                .smallimage {
-                    display: none;
-                }
-                .largeimage {
-                    display: none;
-                }
-                .weatherimages {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                }
-                article {
-                    max-width: 600px;
-                    margin: .5rem auto;
-                    border: 1px solid #bbb;
-                    background-color: linen;
-                }
-                section .cards {
-                    margin: .5rem auto;
-                    border: 1px solid #bbb;
-                    background-color: #eee;
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-                article {
-                    display: flex;
-                    flex-direction: row;
-                }
-                article:nth-child(odd) {
-                    flex-direction: row-reverse;
-                }
-                img {
-                    padding: 0;
-                    margin-bottom: 10px;
-                }
-                @media only screen and (min-width: 64rem) {
-                    nav button {
-                        display: none;
-                    }
-                    nav ul.hide {
-                        display: block;
-                    }
-                    nav ul {
-                        margin-left: 0;
-                    }
-                    nav ul li {
-                        float: left;
-                    }
-                    nav ul li a {
-                        border: none;
-                        border-right: 1px solid rgba(0, 0, 0, 0.3);
-                        padding: .6rem 1rem;
-                    }
-                    .smallimage {
-                        display: none;
-                    }
-                    .mediumimage {
-                        display: none;
-                    }
-                    .largeimage {
-                        display: block;
-                    }
-                    .weatherimages {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
-                    }
-                    div.cards {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
-                        grid-gap: 20px;
-                        text-align: center;
-                        margin: 20px auto;
-                    }
-                    article {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        border: 3px solid #19647E;
-                        text-align: center;
-                        padding: 15px;
-                    }
-                    .cards img {
-                        align-content: center;
-                    }
-                    .tName {
-                        text-align: center;
-                    }
-                }
+                font-size: 3rem;
             }
             
             .boxmodel {

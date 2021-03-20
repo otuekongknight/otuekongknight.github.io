@@ -25,7 +25,6 @@
         ul,
         li {
             margin: 10px;
-            padding-left: 0em;
         }
         
         a:link,
@@ -382,8 +381,18 @@
             color: burlywood;
         }
         
-        h4 {
-            text-align: center;
+        .boxmodel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .boxmodel {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 1em;
+            }
         }
         /*********************************************************************************/
         
@@ -588,6 +597,7 @@
             max-width: 40%;
             border-radius: 10px 10px 0 0;
             padding: 4px;
+            line-height: 2.3;
         }
         
         .icons section {

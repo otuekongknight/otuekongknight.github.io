@@ -124,6 +124,7 @@ fetch(sodaforecastURL)
                 springimage.setAttribute('src', 'https://openweathermap.org/img/w/' + stations.list[i].weather[0].icon + '.png');
                 springimage.setAttribute('alt', stations.list[i].weather[0].icon + '.png');
 
+
                 spring2.appendChild(spring5);
                 spring3.appendChild(spring6);
                 spring4.appendChild(springimage);

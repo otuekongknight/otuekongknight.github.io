@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -10,13 +10,12 @@
     <title>Everyday Weather Website</title>
     <link href="../css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/lesson-11/css/small.css" rel="stylesheet">
-    <link href="/lesson-11/css/medium.css" rel="stylesheet">
-    <link href="/lesson-11/css/large.css" rel="stylesheet">
+    <link href="/lesson-9/css/small.css" rel="stylesheet">
+    <link href="/lesson-9/css/medium.css" rel="stylesheet">
+    <link href="/lesson-9/css/large.css" rel="stylesheet">
 
 
     <link rel="preload" href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' as="font" type='text/css'>
-
 </head>
 
 <body>
@@ -37,10 +36,10 @@
         <nav class="header">
             <ul class="navigation">
                 <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
-                <li><a href="/lesson-11/townpage.html" class="active">Home</a></li>
+                <li class="active"><a href="/lesson-11/index.html">Home</a></li>
                 <li><a href="/lesson-11/preston.html">Preston</a></li>
                 <li><a href="/lesson-11/soda_springs.html">Soda Springs</a></li>
-                <li class="active"><a href="/lesson-11/fish_haven.html">Fish Haven</a></li>
+                <li><a href="/lesson-11/fish_haven.html">Fish Haven</a></li>
                 <li><a href="/lesson-11/storm-center.html">Storm Center</a></li>
                 <li><a href="/lesson-11/gallery.html">Gallery</a></li>
             </ul>
@@ -52,62 +51,63 @@
 
         <div class="heroPicture">
             <picture class="hero">
-                <source srcset="/lesson-11/images/fish_haven.jpg" media="(min-width: 500px) and (max-width: 800px)">
-                <source srcset="/lesson-11/images/fish_haven.jpg" media="(min-width:800px )">
-                <img class="hero-image" src="/lesson-11/images/fish_haven.jpg" alt="Photo of Idaho road">
+                <source srcset="/lesson-9/images/hero.jpg" media="(min-width: 500px) and (max-width: 800px)">
+                <source srcset="/lesson-9/images/hero.jpg" media="(min-width:800px )">
+                <img class="hero-image" src="/lesson-9/images/hero.jpg" alt="Photo of Idaho road">
             </picture>
             <div class="page-subset">
-                <h2 class="hero-header">Fish Haven, Idaho</h2>
+                <h2 class="hero-header">Welcome</h2>
             </div>
         </div>
 
-        <!--<div class="containerboxThree">
-            <h3> <b>Weather Summary</b></h3>
-
-
-            <hr>
-            <p>Currently: cloudy </p>
-            <p>Temperature: <span id="current-temp"></span><br>&deg; F</p>
-            <p>Wind Chill: <span id="wchill"></span><br></p>
-            <p>Humidity: <span id="humidity"></span><br>%</p>
-            <p>Wind Speed: <span id="windspeed"></span><br>mph</p>
-        </div>
-    -->
         <div class="containerboxThree">
             <h3> <b>Weather Summary</b></h3>
-            <hr>
-            <p> <strong> Wind Chill: </strong>
-                <span id="windchill">
-                </span><br></p>
-            <div class='fhaven'></div>
 
+
+            <hr>
+            <p><strong>Currently: cloudy</strong> </p>
+            <p><strong>High: <span id="temp">50 ℉</span><br></strong></p>
+            <p><strong>Wind Chill: <span id="windchill"></span><br></strong></p>
+            <p><strong>Wind Speed: <span id="speed">10 MPH</span><br></strong></p>
+            <p><strong>Humidity: 70</strong></p>
         </div>
 
 
-        <div class='parent'>
-            <h3 class="fivehead">Five Day Forecast</h3>
-            <div class='five'>
-                <section class="fhdays">
-                </section>
-                <section class="fhtemps">
-                </section>
-                <section class="fhicons">
-                </section>
+        <div class="containerboxOne">
+            <h2 id="heading">5 Day Forecast</h2>
+            <div id="tableView">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tbody>
+                            <tr id="tableImg">
+                                <td><img class="weather_icon" src="../lesson5/images/cloudy_gloom.png" alt="cloudy skies"></td>
+                                <td><img class="weather_icon" src="../lesson5/images/cloudy_gloom.png" alt="cloudy skies"></td>
+                                <td><img class="weather_icon" src="../lesson5/images/cloudy_gloom.png" alt="cloudy skies"></td>
+                                <td><img class="weather_icon" src="../lesson5/images/cloudy_gloom.png" alt="cloudy skies"></td>
+                                <td><img class="weather_icon" src="../lesson5/images/cloudy_gloom.png" alt="cloudy skies"></td>
+                            </tr>
+                            <tr>
+                                <td>60 &deg;F</td>
+                                <td>60 &deg;F</td>
+                                <td>60 &deg;F</td>
+                                <td>60 &deg;F</td>
+                                <td>60 &deg;F</td>
+                            </tr>
+                        </tbody>
+                </table>
             </div>
         </div>
-        <div class="fhevents">
-            <h2>Current Events!!!</h2>
+        <div class="containerbox">
+
+            <div class="cards"></div>
         </div>
-
-        <div class="wsum">
-            <h2>Article Summary</h2>
-            <p>Fish Haven, originally named Rush Creek, is an unincorporated community along the shores of Bear Lake in Bear Lake County, Idaho, United States. It is 4 km (2.5 miles) north of the Utah border. The first settlement at Fish Haven was made in
-                1864. A post office called Fish Haven was established in 1867, and remained in operation until 1962.Community information including population statistics and demographics, businesses, real estate, travel, maps, events, history, trivia,
-                classified ads, forums and more. Every year, an annual festival is held in Fish Haven, where different communities come together to celebrate the Harvest.
-            </p>
-
-        </div>
-
 
 
 
@@ -119,7 +119,7 @@
                         width="200" height="250" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="prestonMap"></iframe>
                 </div>
                 <div class="grid-child green">
-                    <h4>Contact Information</h4>
+                    <h3>Contact Information</h3>
 
 
                     <p><b>Address:</b> 888 S 2nd W</p>
@@ -140,7 +140,6 @@
 
 
     </main>
-
     <footer>
         &copy; 2021 WDD 230 | Otuekong Okon | Rexburg Idaho |
         <a href="https://www.byui.edu" rel="noopener" target="_blank">BYUI Online Learning</a>
@@ -151,7 +150,7 @@
     </footer>
     <script src="/lesson-6/js/weather.js"></script>
     <script src="/lesson-6/js/announcement.js"></script>
-    <script src="/lesson-11/js/fish_haven.js"></script>
+    <script src="/lesson-6/js/windchill.js"></script>
     <script src="/lesson-9/js/index.js"></script>
     <script src="/lesson-9/js/cards.js"></script>
     <script>
