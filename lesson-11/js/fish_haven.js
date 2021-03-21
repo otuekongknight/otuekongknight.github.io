@@ -12,11 +12,6 @@ window.addEventListener('load', (event) => {
         if (window.innerWidth > 760) mainnav.classList.remove('responsive')
     };
 
-    const cd = document.querySelector('#currentDate');
-    cd.textContent = new Date().toDateString();
-
-    const cry = document.querySelector('#copyrightyear');
-    cry.textContent = new Date().getFullYear();
 
 })
 
