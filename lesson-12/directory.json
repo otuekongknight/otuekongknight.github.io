@@ -1,0 +1,45 @@
+{
+    "businesses": [{
+            "name": "Arugula Deli",
+            "phone": "(208) 656-7784",
+            "address": "261 WALNUT STREET",
+            "imageurl": "https://baconmockup.com/640/360/"
+        },
+        {
+            "name": "Burger King",
+            "phone": "(208) 525-8820",
+            "address": "2325 EAST 17TH STREET",
+            "imageurl": "https://baconmockup.com/640/360/"
+        },
+        {
+            "name": "Pizza Hut",
+            "phone": "(208) 524-1211",
+            "address": "2250 E 17TH STREET",
+            "imageurl": "https://baconmockup.com/640/360/"
+        },
+        {
+            "name": "McDonald's",
+            "phone": "(208) 522-1621",
+            "address": "1485 W BROADWAY",
+            "imageurl": "https://baconmockup.com/640/360/"
+        },
+        {
+            "name": "Noodles & Company",
+            "phone": "(208) 528-7366",
+            "address": "1870 S. 25TH EAST",
+            "imageurl": "https://baconmockup.com/640/360/"
+        },
+        {
+            "name": "Denny's",
+            "phone": "(208) 528-9210",
+            "address": "950 LINDSEY BLVD",
+            "imageurl": "https://baconmockup.com/640/360/"
+        },
+        {
+            "name": "Five Guys",
+            "phone": "(208) 522-4448",
+            "address": "2541 S. 25TH STREET",
+            "imageurl": "https://baconmockup.com/640/360/"
+        }
+    ]
+}
