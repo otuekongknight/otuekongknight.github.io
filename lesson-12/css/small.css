@@ -39,7 +39,7 @@
         }
         
         .main-head {
-            background: burlywood;
+            background: #662D91;
             padding: 15px 0;
         }
         
@@ -234,7 +234,7 @@
             padding: 3rem;
             text-align: center;
             color: black;
-            background: burlywood
+            background: #662D91;
         }
         
         .subscript {
@@ -281,7 +281,7 @@
         
         nav {
             margin: 0 auto;
-            background-color: burlywood;
+            background-color: #662D91;
         }
         
         .navigation {
@@ -309,7 +309,7 @@
         }
         
         .navigation a:hover {
-            color: burlywood;
+            color: #662D91;
             background-color: grey;
         }
         
@@ -378,7 +378,7 @@
         
         nav ul li.active a {
             background-color: grey;
-            color: burlywood;
+            color: #662D91;
         }
         
         .boxmodel {

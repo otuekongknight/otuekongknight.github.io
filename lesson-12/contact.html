@@ -10,10 +10,10 @@
     <title>Everyday Weather Website</title>
     <link href="../css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/lesson-12/css/small.css" rel="stylesheet">
-    <link href="/lesson-12/css/smalTablel.css" rel="stylesheet">
-    <link href="/lesson-12/css/medium.css" rel="stylesheet">
-    <link href="/lesson-12/css/large.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/smalTablel.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
 
 
 
@@ -27,8 +27,8 @@
             <div class="header-row">
                 <div class="header-item"><img src="/lesson-12/images/homepage/logo.jpg" alt="logo" width="100" /> </div>
                 <div class="header-item" style="text-align: left">
-                    <h1 style="color: #fff; margin-bottom: 10px">Ciy of Idaho Falls</h1>
-                    <span style="color: #fff;">Chamber of Commerce</span>
+                    <h1 style="color: #fff; margin-bottom: 10px">Everyday Weather</h1>
+                    <span style="color: #fff;">...in your pocket</span>
                 </div>
             </div>
         </div>
@@ -40,9 +40,9 @@
                 <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
                 <li><a href="/lesson-12/index.html">Home</a></li>
                 <li><a href="/lesson-12/city.html"> Our City</a></li>
-                <li class="active"><a href="/lesson-12/join.html">Join Us</a></li>
+                <li><a href="/lesson-12/join.html">Join Us</a></li>
                 <li><a href="/lesson-12/directory.html">Directory</a></li>
-                <li><a href="/lesson-12/contact.html">Contact Us</a></li>
+                <li class="active"><a href="/lesson-12/contact.html">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -52,64 +52,35 @@
 
         <div class="heroPicture">
             <picture class="hero">
-                <source srcset="/lesson-12/images/homepage/idaho_falls.jpg" media="(min-width: 500px) and (max-width: 800px)">
-                <source srcset="/lesson-12/images/homepage/idaho_falls.jpg" media="(min-width:800px )">
-                <img class="hero-image" src="/lesson-12/images/homepage/idaho_falls.jpg" alt="Photo of grassland and mountains in Idaho">
+                <source srcset="/lesson-12/images/homepage/feedback_page.jpg" media="(min-width: 500px) and (max-width: 800px)">
+                <source srcset="/lesson-12/images/homepage/feedback_page.jpg" media="(min-width:800px )">
+                <img class="hero-image" src="/lesson-12/images/homepage/feedback_page.jpg" alt="Photo of grassland and mountains in Idaho">
             </picture>
             <div class="page-subset">
-                <h2 class="hero-header">Idaho Falls</h2>
+                <h2 class="hero-header" style="color: black;">Contact Us</h2>
             </div>
         </div>
 
 
 
-        <h4>We have different membership packages. Join us below!</h4>
+        <h4>We'd love to hear from you. Contact us today!</h4>
         <div class="containerbox">
             <p>
                 <div class="formdiv">
-                    <form method="get" action="/lesson-12/thankYou.html">
+                    <form method="get" action="/lesson-12/response.html">
                         <fieldset>
                             <legend class="legendtitle">Your Information Goes Below</legend>
                             <label class="top">First Name*<input type="text" name="fname" required></label>
                             <label class="top">Last Name*:<input type="text" name="lname" required /> </label>
-                            <label class="top">Tittle<input type="text" name="lname"/> </label>
                             <label class="top">Email*:<input type="text" name="lname" required /> </label>
-                            <label class="top">Business Name*:<input type="text" name="lname" required /> </label>
 
                             <label class="top">Phone*<input type="tel" name="phone" placeholder="9708533421" required />
                     </label>
-                            <label class="top">Business Address<input type="text" name="lname"/> </label>
-
-                            <label class="top">Business Website<input type="text" name="lname"/> </label>
 
                         </fieldset>
-                        <fieldset>
-                            <legend class="legendtitle">Membership options</legend>
-                            <label class="top">Plan type</label>
-                            <select name="subject" class="formbut">
-                        <option selected disabled>Please Select</option>
-                        <option value="thunderstorm">Non-profit($100)</option>
-                        <option value="flood">Bronze($200)</option>
-                        <option value="hail">Silver($400)</option>
-                        <option value="hurricane">Gold($1000)</option>
-            
-                    </select>
 
 
-
-
-
-                        </fieldset>
-                        <fieldset>
-                            <legend class="legendtitle">Plan Information</legend>
-                            <label class="top">*Non-profit plan</label> Advertising slots; invite to conference and round tables; general membership
-
-                            <label class="top">*Bronze plan</label> Access to loan and financial institutions; business mentorship + all of Non-profit benefits
-                            <label class="top">*Silver Plan</label> Free access to city facilities; Free use of city land and parks + all of Non-profit and Bronze benefits
-                            <label class="top">*Gold plan</label> Access to city tax credits; free annual business eval + all of Non-profit, Bronze, and Silver benefits.
-
-
-                            <datalist id="tickmarks">
+                        <datalist id="tickmarks">
                         <option value="0">
                         <option value="1">
                         <option value="2">
@@ -122,16 +93,56 @@
                         <option value="9">
                         <option value="10">
                     </datalist>
-                        </fieldset>
+
                         <fieldset id="comments">
-                            <legend class="legendtitle">Business Description</legend>
+                            <legend class="legendtitle">Comments Here</legend>
                             <label><input type="text" class="txtarea"></label>
                         </fieldset>
-                        <input type="submit" value="Join now" class="submitBtn">
+                        <input type="submit" value="Send Message" class="submitBtn">
                     </form>
                 </div>
 
         </div>
+        <div class="containerbox">
+            <p> Directors</p>
+            <hr>
+            <ul>
+                <li> Anthony Hernandez<br> Teton Volkswagon</li>
+                <li>Elsje Johnson
+                    <br>Blue Cross of Idaho</li>
+                <li>Travis Quast<br> Adams Publishing</li>
+
+                <li>Steve Hunter<br> Hunter Memorial Monuments</li>
+            </ul>
+            <ul>
+                <li>Pamela Gallegos<br> Shoshone-Bannock Hotel & Event Center</li>
+                <li>Michael Walker<br> College of Eastern Idaho</li>
+                <li>Megan Bodrero<br> Citizens Community Bank</li>
+                <li>Marvin K Smith<br> Hawley Troxell</li>
+            </ul>
+            <ul>
+                <li>Mark Baker<br> Bingham Memorial Hospital</li>
+
+                <li>Jarod Phillips<br> Bank of Idaho</li>
+                <li>Jeremy Hix<br> BBSI
+                </li>
+                <li>Geri Rackow<br> Eastern Idaho Public Health</li>
+            </ul>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div class="containerbox">
@@ -159,7 +170,6 @@
 
             </div>
         </div>
-
 
 
     </main>

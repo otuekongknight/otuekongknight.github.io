@@ -40,7 +40,7 @@
                 }
                 
                 .main-head {
-                    background: burlywood;
+                    background: #662D91;
                     padding: 15px 0;
                 }
                 
@@ -90,6 +90,16 @@
                     border: 1px;
                     color: black;
                     box-shadow: 0 4px 4px 0 rgb(0 0 0 / 80%);
+                    max-width: 890px;
+                }
+                
+                .containerboxpurpose {
+                    background-color: white;
+                    padding: 12px;
+                    display: block;
+                    margin: 10px auto;
+                    border: 1px;
+                    color: black;
                     max-width: 890px;
                 }
                 
@@ -234,8 +244,8 @@
                     font-size: .9em;
                     padding: 3rem;
                     text-align: center;
-                    color: black;
-                    background: burlywood
+                    color: white;
+                    background: #662D91;
                 }
                 
                 .subscript {
@@ -310,7 +320,7 @@
                 }
                 
                 .navigation a:hover {
-                    color: burlywood;
+                    color: #662D91;
                     background-color: grey;
                 }
                 
@@ -379,7 +389,7 @@
                 
                 nav ul li.active a {
                     background-color: grey;
-                    color: burlywood;
+                    color: #662D91;
                 }
                 
                 h4 {
@@ -571,6 +581,69 @@
                     }
                 }
                 
+                .fivehead {
+                    font-size: 20pt;
+                    height: 30px;
+                    text-align: center;
+                    margin: 8px auto;
+                }
+                
+                .five {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: 150px 50px 60px;
+                    align-items: center;
+                    justify-content: center;
+                    background-image: linear-gradient(grey, grey, white);
+                    max-width: 40%;
+                    border-radius: 10px 10px 0 0;
+                    padding: 4px;
+                }
+                
+                .icons section {
+                    max-height: 42px;
+                }
+                
+                .wsum {
+                    text-align: center;
+                    padding: 4px;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 40%;
+                    border-radius: 0 0 10px 10px;
+                    background-image: linear-gradient(burlywood, burlywood);
+                }
+                
+                .wsum h2 {
+                    margin-top: 0;
+                    grid-column: 1/-1;
+                    text-align: center;
+                }
+                
+                .wsum {
+                    max-width: 40%;
+                    width: 75vw;
+                }
+                
+                .ssevents,
+                .prevents,
+                .fhevents {
+                    margin: 0 auto;
+                    text-align: center;
+                    justify-content: center;
+                    background-color: burlywood;
+                    max-width: 40%;
+                    border: 2px black double;
+                    padding: 4px;
+                    color: black;
+                }
+                
+                .ssevents h2,
+                .prevents h2,
+                .fhevents h2 {
+                    text-align: center;
+                }
+                
                 .boxmodel {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
@@ -584,57 +657,275 @@
                         padding: 1em;
                     }
                 }
+                /***************************************************************Home Page CSS
+*/
+                
+                #purpose {
+                    text-align: center;
+                    line-height: 30px;
+                }
+                
+                .upcomingevents {
+                    font-family: 'Barlow Condensed', sans-serif;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: black;
+                    margin-top: 30px;
+                }
+                
+                #calltoaction {
+                    background-color: #662D91;
+                    border-radius: 20px;
+                    background-image: url(https://www.pexels.com/photo/green-fields-near-brown-mountain-210243/);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    text-align: center;
+                    text-decoration: none;
+                    margin-bottom: 40px;
+                    margin-top: 40px;
+                    box-shadow: 5px 10px 30px 1px #888888;
+                }
+                
+                #calltoaction a {
+                    text-decoration: none;
+                }
+                
+                #calltoaction h3,
+                #calltoaction p {
+                    color: white;
+                    font-family: 'Barlow Condensed', sans-serif;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+                
+                .threeday,
+                .stats {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                
+                #divday1,
+                #divday2,
+                #divday3 {
+                    margin-top: 10px;
+                    border: black;
+                    border-style: solid;
+                    border-width: 1px 0px;
+                }
+                
+                #divday1 img,
+                #divday2 img,
+                #divday3 img {
+                    margin: -10px;
+                    width: 75px;
+                }
+                
+                #threeads {
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    display: flex;
+                }
+                
+                #threeads img {
+                    align-self: center;
+                    margin: auto;
+                }
+                
+                @media only screen and (min-width: 960px) {
+                    .threeday {
+                        text-align: center;
+                        font-family: 'Barlow Condensed', sans-serif;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: #262262;
+                    }
+                    .stats {
+                        text-align: center;
+                        margin-bottom: 50px;
+                    }
+                    .threedaycontainer {
+                        display: flex;
+                        margin-top: 0px;
+                    }
+                    #divday1,
+                    #divday2,
+                    #divday3 {
+                        display: inline;
+                        margin: auto;
+                    }
+                    #threeads {
+                        display: flex;
+                    }
+                    #ad1,
+                    #ad2,
+                    #ad3 {
+                        margin: 0 auto;
+                    }
+                    #purpose {
+                        display: block;
+                    }
+                    #threeads img {
+                        margin: 0 auto;
+                    }
+                }
+                /*Slide CSS****************************************************************************************************/
                 
                 * {
-                    box-sizing: border-box;
+                    box-sizing: border-box
                 }
-                /* Create two equal columns that floats next to each other */
                 
-                .column {
-                    float: left;
-                    width: 50%;
-                    padding: 10px;
+                body {
+                    font-family: Verdana, sans-serif;
+                    margin: 0
                 }
-                /* Clear floats after the columns */
                 
-                .row:after {
-                    content: "";
-                    display: table;
-                    clear: both;
+                .mySlides {
+                    display: none
                 }
-                /* Style the buttons */
                 
-                .btn {
-                    border: none;
-                    outline: none;
-                    padding: 12px 16px;
-                    background-color: #f1f1f1;
+                img {
+                    vertical-align: middle;
+                }
+                /* Slideshow container */
+                
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
+                /* Next & previous buttons */
+                
+                .prev,
+                .next {
                     cursor: pointer;
-                }
-                
-                .btn:hover {
-                    background-color: #ddd;
-                }
-                
-                .btn.active {
-                    background-color: #666;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
                     color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
                 }
+                /* Position the "next button" to the right */
                 
-                button {
-                    border: none;
-                    outline: none;
-                    padding: 12px 16px;
-                    background-color: grey;
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+                /* On hover, add a black background color with a little bit see-through */
+                
+                .prev:hover,
+                .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+                /* Caption text */
+                
+                .text {
+                    color: #f2f2f2;
+                    font-size: 15px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    bottom: 8px;
+                    width: 100%;
+                    text-align: center;
+                }
+                /* Number text (1/3 etc) */
+                
+                .numbertext {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                }
+                /* The dots/bullets/indicators */
+                
+                .dot {
                     cursor: pointer;
-                    align-items: center;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
                 }
                 
-                .button:hover {
-                    background-color: grey;
+                .active,
+                .dot:hover {
+                    background-color: #717171;
+                }
+                /* Fading animation */
+                
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 1.5s;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
                 }
                 
-                .button.active {
-                    background-color: #666;
-                    color: white;
+                @-webkit-keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+                    to {
+                        opacity: 1
+                    }
+                }
+                
+                @keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+                    to {
+                        opacity: 1
+                    }
+                }
+                /* On smaller screens, decrease text size */
+                
+                @media only screen and (max-width: 300px) {
+                    .prev,
+                    .next,
+                    .text {
+                        font-size: 11px
+                    }
+                }
+                /*************************closable annoucment******************************/
+                
+                .man {
+                    /* Prevent double borders */
+                    background-color: white;
+                    padding: 2em;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: black;
+                    display: block;
+                    position: relative;
+                    text-align: center;
+                }
+                
+                .man:hover {
+                    background-color: whitesmoke;
+                }
+                
+                .close {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    right: 0%;
+                    padding: 12px 16px;
+                    transform: translate(0%, -50%);
+                }
+                
+                .close:hover {
+                    background: whitesmoke;
                 }
